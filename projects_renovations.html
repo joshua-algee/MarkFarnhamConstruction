@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Renovations | Projects</title>
+
+  <meta name="description" content="Renovation project photos by Mark Farnham Construction LLC." />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-content">
+
+      <div class="brand">
+        <h1>Mark Farnham Construction LLC</h1>
+        <p class="license">Certified General Contractor • License CGC1539426</p>
+      </div>
+
+      <nav class="nav">
+
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html" class="cta">Contact</a>
+        </div>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">Projects</div>
+        <h2>Renovations</h2>
+        <p>
+          Interior and exterior improvements with a focus on craftsmanship and long term quality.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="projects.html" class="button button-secondary">Back to Projects</a>
+          <a href="contact.html" class="button button-primary">Request an Estimate</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+
+        <h3>Gallery</h3>
+
+        <div class="projects-grid">
+
+          <figure class="project-card">
+            <img src="images/renovation_1.jpg" alt="Renovation project photo 1">
+            <figcaption>Renovation project</figcaption>
+          </figure>
+
+          <figure class="project-card">
+            <img src="images/renovation_2.jpg" alt="Renovation project photo 2">
+            <figcaption>Renovation project</figcaption>
+          </figure>
+
+          <figure class="project-card">
+            <img src="images/renovation_3.jpg" alt="Renovation project photo 3">
+            <figcaption>Renovation project</figcaption>
+          </figure>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Licensed and Insured • Certified General Contractor CGC1539426 • BBB Accredited
+      </p>
+      <p>
+        © 2025 Mark Farnham Construction LLC • Serving East Central Florida Since 2007
+      </p>
+    </div>
+  </footer>
+
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("active");
+      menuToggle.classList.toggle("active");
+      menuToggle.setAttribute("aria-expanded", isOpen);
+    });
+  </script>
+
+</body>
+</html>
