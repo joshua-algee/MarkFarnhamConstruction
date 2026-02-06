@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Projects | Mark Farnham Construction LLC</title>
+
+  <meta name="description" content="Project photos and examples of hurricane protection, wind mitigation upgrades, and remodeling work." />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-content">
+
+      <div class="brand">
+        <h1>Mark Farnham Construction LLC</h1>
+        <p class="license">Certified General Contractor • License CGC1539426</p>
+      </div>
+
+      <nav class="nav">
+
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html" class="cta">Contact</a>
+        </div>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">Projects</div>
+        <h2>Recent Work and Project Photos</h2>
+        <p>
+          A sample of hurricane protection installations, wind mitigation upgrades, and remodeling work completed throughout East Central Florida.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="contact.html" class="button button-primary">Request an Estimate</a>
+          <a href="tel:PHONENUMBER" class="button button-secondary">Call Now</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+        <h3>Project Gallery</h3>
+
+        <p class="section-intro">
+          Photos and before-and-after examples will be added here. For now, this gallery is ready for you to drop images into the images folder and update the filenames.
+        </p>
+
+        <div class="projects-grid">
+
+          <figure class="project-card">
+            <img src="images/project_1.jpg" alt="Project photo 1">
+            <figcaption>Replace this caption with what was done.</figcaption>
+          </figure>
+
+          <figure class="project-card">
+            <img src="images/project_2.jpg" alt="Project photo 2">
+            <figcaption>Replace this caption with what was done.</figcaption>
+          </figure>
+
+          <figure class="project-card">
+            <img src="images/project_3.jpg" alt="Project photo 3">
+            <figcaption>Replace this caption with what was done.</figcaption>
+          </figure>
+
+          <figure class="project-card">
+            <img src="images/project_4.jpg" alt="Project photo 4">
+            <figcaption>Replace this caption with what was done.</figcaption>
+          </figure>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Licensed and Insured • Certified General Contractor CGC1539426 • BBB Accredited
+      </p>
+      <p>
+        © 2025 Mark Farnham Construction LLC • Serving East Central Florida Since 2007
+      </p>
+    </div>
+  </footer>
+
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("active");
+      menuToggle.classList.toggle("active");
+      menuToggle.setAttribute("aria-expanded", isOpen);
+    });
+  </script>
+
+</body>
+</html>

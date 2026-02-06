@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact | Mark Farnham Construction LLC</title>
+
+  <meta name="description" content="Contact Mark Farnham Construction LLC to request an estimate or schedule a site visit." />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Skip Link -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-content">
+
+      <div class="brand">
+        <h1>Mark Farnham Construction LLC</h1>
+        <p class="license">Certified General Contractor • License CGC1539426</p>
+      </div>
+
+      <nav class="nav">
+
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html" class="cta">Contact</a>
+        </div>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main id="main">
+
+    <!-- CONTACT -->
+    <section class="section">
+
+      <div class="container">
+
+        <h3>Get in Touch</h3>
+
+        <p class="section-intro">
+          Contact us to discuss your project and schedule an on-site visit.
+        </p>
+
+
+        <div class="contact-info">
+
+
+          <div class="contact-item contact-preferred">
+            <div>
+              <strong>Text (Preferred)</strong>
+              <p><a href="sms:PHONENUMBER">(321) 432-6565</a></p>
+            </div>
+          </div>
+
+
+          <div class="contact-item">
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:PHONENUMBER">(321) 432-6565</a></p>
+            </div>
+          </div>
+
+
+          <div class="contact-item">
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:EMAILADDRESS">your@email.com</a></p>
+            </div>
+          </div>
+
+
+          <div class="contact-item">
+            <div>
+              <strong>Service Area</strong>
+              <p>East Central Florida</p>
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="contact-note">
+          <p>
+            We respond to most inquiries within one business day.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <p>
+        Licensed and Insured • Certified General Contractor CGC1539426 • BBB Accredited
+      </p>
+
+      <p>
+        © 2025 Mark Farnham Construction LLC • Serving East Central Florida Since 2007
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- SCRIPT -->
+  <script>
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+
+      const isOpen = navLinks.classList.toggle("active");
+
+      menuToggle.classList.toggle("active");
+
+      menuToggle.setAttribute("aria-expanded", isOpen);
+
+    });
+
+  </script>
+
+</body>
+</html>

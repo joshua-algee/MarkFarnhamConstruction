@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Services | Mark Farnham Construction LLC</title>
+
+  <meta name="description" content="Hurricane protection, wind mitigation, remodeling, and condo or commercial construction services serving East Central Florida." />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-content">
+
+      <div class="brand">
+        <h1>Mark Farnham Construction LLC</h1>
+        <p class="license">Certified General Contractor • License CGC1539426</p>
+      </div>
+
+      <nav class="nav">
+
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html" class="cta">Contact</a>
+        </div>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">Services</div>
+        <h2>Construction Services Built for Florida</h2>
+        <p>
+          Hurricane protection, wind mitigation, remodeling, and condo or commercial work,
+          completed with code compliance and clear communication.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="contact.html" class="button button-primary">Request an Estimate</a>
+          <a href="tel:PHONENUMBER" class="button button-secondary">Call Now</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+
+        <h3>Our Services</h3>
+
+        <p class="section-intro">
+          Specialized construction services designed for Florida’s demanding coastal and high-wind environment.
+        </p>
+
+        <div class="services-grid">
+
+          <div class="card card-featured">
+            <h4>Hurricane Protection & Wind Mitigation</h4>
+
+            <p>
+              Comprehensive hurricane structural and opening protection services, including wind mitigation inspections.
+              We evaluate roof coverings, roof-to-wall connections, roof deck attachments, secondary water resistance,
+              and opening protection systems to improve wind resistance and reduce storm-related risk.
+            </p>
+
+            <ul class="card-list">
+              <li>Wind mitigation inspections</li>
+              <li>Hurricane structural upgrades</li>
+              <li>Opening protection systems</li>
+              <li>Insurance mitigation credit documentation</li>
+            </ul>
+          </div>
+
+
+          <div class="card">
+            <h4>Residential Remodeling</h4>
+
+            <p>
+              Quality craftsmanship for home improvement projects with a focus on structural integrity and Florida Building Code compliance.
+            </p>
+
+            <ul class="card-list">
+              <li>Kitchen renovations</li>
+              <li>Bathroom renovations</li>
+              <li>Home additions</li>
+              <li>Windows and doors</li>
+              <li>Screen and glass rooms</li>
+            </ul>
+          </div>
+
+
+          <div class="card">
+            <h4>Commercial & Condo Services</h4>
+
+            <p>
+              Experienced in working with condominium associations, property management, and commercial properties
+              with attention to board approval processes and minimal disruption.
+            </p>
+
+            <ul class="card-list">
+              <li>Condominium projects</li>
+              <li>Commercial properties</li>
+              <li>Board coordination</li>
+              <li>Documentation and scheduling</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="section alt">
+      <div class="container">
+        <h3>How It Works</h3>
+
+        <p class="section-intro">
+          A simple process that keeps communication clear and projects moving.
+        </p>
+
+        <div class="services-grid">
+
+          <div class="card">
+            <h4>1. Reach Out</h4>
+            <p>Text or call to tell us what you need and the location of the property.</p>
+          </div>
+
+          <div class="card">
+            <h4>2. Site Visit</h4>
+            <p>We schedule an on-site visit to evaluate the work and answer questions.</p>
+          </div>
+
+          <div class="card">
+            <h4>3. Written Estimate</h4>
+            <p>We provide a written estimate and timeline, then schedule the work.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Licensed and Insured • Certified General Contractor CGC1539426 • BBB Accredited
+      </p>
+      <p>
+        © 2025 Mark Farnham Construction LLC • Serving East Central Florida Since 2007
+      </p>
+    </div>
+  </footer>
+
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("active");
+      menuToggle.classList.toggle("active");
+      menuToggle.setAttribute("aria-expanded", isOpen);
+    });
+  </script>
+
+</body>
+</html>
