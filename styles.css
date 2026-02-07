@@ -527,18 +527,25 @@ body {
 }
 
 .contact-note {
+  grid-column: 1 / -1;
+  width: 100%;
+
   margin-top: 2rem;
-  padding: 1rem;
-  background: #fff3cd;
-  border: 1px solid #ffc107;
-  border-radius: var(--radius-sm);
+  padding: 1.25rem 1.5rem;
+
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+
+  box-shadow: var(--shadow);
+
   text-align: center;
 }
 
 .contact-note p {
   margin: 0;
-  color: #856404;
-  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
 }
 
 /* FOOTER */
@@ -725,4 +732,59 @@ body {
 .projects-preview-link {
   font-weight: 700;
   color: var(--primary);
+}
+
+.team-owner {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 2.5rem;
+}
+
+.owner-card {
+  max-width: 420px;
+  text-align: center;
+  border: 2px solid var(--primary-light);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.team-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+}
+
+.team-meta {
+  margin-top: 0.35rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.team-role {
+  margin-top: 0.75rem;
+  color: var(--text);
+}
+
+.contact-preferred {
+  border: 2px solid var(--primary-light);
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.contact-preferred strong::after {
+  content: "Preferred";
+  display: inline-block;
+  margin-left: 0.6rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--primary);
+  border: 1px solid var(--primary-light);
+  background: white;
 }
